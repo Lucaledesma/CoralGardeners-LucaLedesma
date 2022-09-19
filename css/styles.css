@@ -144,6 +144,28 @@
     color: #c65ab5;
   }
 }
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .transition, header nav a.title, header nav a.logo {
   transition: transform 0.3s;
 }
@@ -243,8 +265,8 @@
 }
 
 h2 {
-  font-family: "Fredoka One", cursive;
-  color: #01000f;
+  font-weight: 700;
+  color: white;
 }
 h2::-moz-selection {
   background-color: white;
@@ -306,13 +328,34 @@ header nav div ul li a.nav-link:hover {
 }
 
 main {
-  background-image: url("../assets/img/bg/bg-main.png");
+  background-color: #01000f;
 }
 main .hero__main {
   -webkit-animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
           animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
+main section.hero-index {
+  background-image: url("../assets/img/logo/hero-index.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+main section.hero-index .hero-h1 {
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+main section.hero-index .hero-h3 {
+  text-decoration: none;
+  color: white;
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+main section.hero-index .hero-h3 h3:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 1s, color 1.5s;
+}
 main section > div video.index__video {
   -webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -440,6 +483,27 @@ main section div iframe.sucursal__maps:hover {
   transform: scale(1.05);
 }
 
+main section.hero-contacto {
+  background-image: url("../assets/img/logo/hero-contacto.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+main section.hero-contacto .hero-h1 {
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+main section.hero-contacto .hero-h3 {
+  text-decoration: none;
+  color: white;
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+main section.hero-contacto .hero-h3 h3:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 1s, color 1.5s;
+}
 main .bg-contacto {
   background-color: #01000f;
 }

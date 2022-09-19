@@ -8,8 +8,10 @@
 }
 
 h2 {
-    font-family: $fontH2;
-    color: $color-coralgarden;
+    // font-family: $fontH2;
+    // color: $color-coralgarden;
+    font-weight: 700;
+    color: white;
 
     &::selection {
         background-color: #ffff;

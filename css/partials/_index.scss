@@ -2,6 +2,15 @@ main {
 
     section {
 
+        &.hero-index {
+            background-image: url("../assets/img/logo/hero-index.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+
+            @include hero;
+        }
+
         > div {
 
             video {

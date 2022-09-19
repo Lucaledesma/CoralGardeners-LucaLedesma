@@ -30,6 +30,9 @@ $animacion_twitter: efecto_twitter .7s ease-in-out infinite both;
 $animacion_instagram: efecto_instagram .7s ease-in-out infinite both;
 @keyframes efecto_instagram{0%{font-size: 1.6rem;color:#c65ab5;}50%{font-size: 1.8rem;color:#dab745;}100%{font-size: 1.6rem;color:#c65ab5;}}
 
+$animacion-heroHs: focus-in-expand 1.2s cubic-bezier(.25,.46,.45,.94) both;
+@keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
 $shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
 $shadow-service: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 
@@ -101,4 +104,26 @@ $color-redes: (
 @mixin alto($h) {
     height: $h;
 };
+
+@mixin hero {
+    .hero-h1 {
+        animation: $animacion-heroHs;
+    }
+
+    .hero-h3 {
+        text-decoration: none;
+        color: white;
+        animation: $animacion-heroHs;
+
+        h3 {
+
+            &:hover {
+                background-color: white;
+                color: black;
+                transition: background-color 1s, color 1.5s;
+            }
+
+        }
+    }
+}
 
