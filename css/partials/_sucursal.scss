@@ -34,11 +34,10 @@ main {
 
             &.sucursal__item {
                 position: relative;
-                box-shadow: $shadow;
                 transition: all .4s;
 
                 &:hover {
-                    border: 1rem solid $color-coralgarden;
+                    border: .7rem solid $color-coralgarden;
                 }
 
                 &::before{
@@ -56,6 +55,7 @@ main {
 
                 &.h2-sucursal {
                     z-index: 1;
+                    animation: $animacion-sucursal;
                 }
 
                 &::selection {
@@ -63,6 +63,25 @@ main {
                     color: #185767;
                 }
 
+                a {
+                    text-decoration: none;
+                    color: white;
+    
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            img {
+
+                &.location {
+                    transition: all .4s;
+
+                    &:hover {
+                        padding: 20px;
+                    }
+                }
             }
 
             iframe {

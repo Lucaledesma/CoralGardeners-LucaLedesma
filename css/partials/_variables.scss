@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
 // Fonts
 $fontGeneral: 'Josefin Sans', sans-serif;
-$fontH2: 'Fredoka One', cursive;
+$fontH2: 'Lora', cursive;
 
 $fs-iconFooter: 45px;
 
 // Backgrounds
 $bg-coralGarden: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
-$bg-servicios: linear-gradient(90deg, rgba(72,175,172,1) 0%, rgba(72,175,172,1) 27%, rgba(255,255,255,1) 71%);
+$bg-servicios: linear-gradient(90deg, rgba(30,108,129,1) 0%, rgba(9,60,74,1) 100%);
+$bg-info: linear-gradient(90deg, #01000f 0%, #083642 1%, #04202f 40%, #061527 70%, #01000f 100%);
 
 // Animaciones - Shadows
 $animacion-logo: tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both;
@@ -33,6 +34,9 @@ $animacion_instagram: efecto_instagram .7s ease-in-out infinite both;
 $animacion-heroHs: focus-in-expand 1.2s cubic-bezier(.25,.46,.45,.94) both;
 @keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
+$animacion-sucursal: pulsate-fwd 2s ease-in-out infinite both;
+@keyframes pulsate-fwd{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+
 $shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
 $shadow-service: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 
@@ -52,7 +56,7 @@ $color-redes: (
 };
 
 .background-informacion {
-    background: $bg-coralGarden;
+    background: $bg-info;
     color: white;
 
     transition: all .35s;

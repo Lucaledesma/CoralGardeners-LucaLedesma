@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap");
 @-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -166,12 +166,34 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .transition, header nav a.title, header nav a.logo {
   transition: transform 0.3s;
 }
 
 .background-informacion, main section div.bg-informacion, main section h3.h3-informacion {
-  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+  background: linear-gradient(90deg, #01000f 0%, #083642 1%, #04202f 40%, #061527 70%, #01000f 100%);
   color: white;
   transition: all 0.35s;
 }
@@ -265,6 +287,7 @@
 }
 
 h2 {
+  font-family: "Lora", cursive;
   font-weight: 700;
   color: white;
 }
@@ -392,7 +415,7 @@ main section .border-radius {
   border-radius: 20px;
 }
 main section.bg-servicio {
-  background: linear-gradient(90deg, rgb(72, 175, 172) 0%, rgb(72, 175, 172) 27%, rgb(255, 255, 255) 71%);
+  background: linear-gradient(90deg, rgb(30, 108, 129) 0%, rgb(9, 60, 74) 100%);
 }
 main section.servicio__img img {
   box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
@@ -449,11 +472,10 @@ main section div.bg__sucursal--cuatro {
 }
 main section div.sucursal__item {
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
   transition: all 0.4s;
 }
 main section div.sucursal__item:hover {
-  border: 1rem solid #01000f;
+  border: 0.7rem solid #01000f;
 }
 main section div.sucursal__item::before {
   content: "";
@@ -466,6 +488,8 @@ main section div.sucursal__item::before {
 }
 main section div h2.h2-sucursal {
   z-index: 1;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+          animation: pulsate-fwd 2s ease-in-out infinite both;
 }
 main section div h2::-moz-selection {
   background-color: #a3daf1;
@@ -474,6 +498,19 @@ main section div h2::-moz-selection {
 main section div h2::selection {
   background-color: #a3daf1;
   color: #185767;
+}
+main section div h2 a {
+  text-decoration: none;
+  color: white;
+}
+main section div h2 a:hover {
+  color: white;
+}
+main section div img.location {
+  transition: all 0.4s;
+}
+main section div img.location:hover {
+  padding: 20px;
 }
 main section div iframe.sucursal__maps {
   transition: transform 0.35s;
