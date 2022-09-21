@@ -9,7 +9,7 @@ $fs-iconFooter: 45px;
 
 // Backgrounds
 $bg-coralGarden: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
-$bg-servicios: linear-gradient(90deg, rgba(30,108,129,1) 0%, rgba(9,60,74,1) 100%);
+$bg-servicios: linear-gradient(90deg, #1e6c81 0%, rgba(9,60,74,1) 100%);
 $bg-info: linear-gradient(90deg, #01000f 0%, #083642 1%, #04202f 40%, #061527 70%, #01000f 100%);
 
 // Animaciones - Shadows
@@ -38,7 +38,7 @@ $animacion-sucursal: pulsate-fwd 2s ease-in-out infinite both;
 @keyframes pulsate-fwd{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
 
 $shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
-$shadow-service: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+$shadow-service: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px; 
 
 // Colores
 $color-coralgarden: #01000f;
@@ -49,85 +49,3 @@ $color-redes: (
     "twitter": #61dfff,
     "instagram": #ff9cfd,
 );
-
-//Extends
-.transition {
-    transition: transform .3s;
-};
-
-.background-informacion {
-    background: $bg-info;
-    color: white;
-
-    transition: all .35s;
-};
-
-.servicio-carousel {
-    height: 80vh;
-    background-position: center center;
-    background-size: cover;
-};
-
-.icons-servicio {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: $color-coralgarden;
-};
-
-.background-sucursal {
-    background-position: center center;
-    background-size: cover;
-};
-
-.animacion-error {
-    animation: wobble-hor-bottom 3s infinite;
-    animation-timing-function: ease-in-out;
-    @keyframes wobble-hor-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}}
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.icons-footer {
-    font-size: 35px;
-    color: map-get($color-redes , "logo" );
-    transition: all .3s;
-};
-
-//Mixins
-@mixin tam($w, $h) {
-    width: $w;
-    height: $h;
-};
-
-@mixin ancho($w) {
-    width: $w;
-};
-
-@mixin alto($h) {
-    height: $h;
-};
-
-@mixin hero {
-    .hero-h1 {
-        animation: $animacion-heroHs;
-    }
-
-    .hero-h3 {
-        text-decoration: none;
-        color: white;
-        animation: $animacion-heroHs;
-
-        h3 {
-
-            &:hover {
-                background-color: white;
-                color: black;
-                transition: background-color 1s, color 1.5s;
-            }
-
-        }
-    }
-}
-

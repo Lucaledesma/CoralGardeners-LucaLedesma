@@ -1,0 +1,34 @@
+@mixin tam($w, $h) {
+    width: $w;
+    height: $h;
+};
+
+@mixin ancho($w) {
+    width: $w;
+};
+
+@mixin alto($h) {
+    height: $h;
+};
+
+@mixin hero {
+    .hero-h1 {
+        animation: $animacion-heroHs;
+    }
+
+    .hero-h3 {
+        text-decoration: none;
+        color: white;
+        animation: $animacion-heroHs;
+
+        h3 {
+
+            &:hover {
+                background-color: white;
+                color: black;
+                transition: background-color 1s, color 1.5s;
+            }
+
+        }
+    }
+}

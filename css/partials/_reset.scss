@@ -11,11 +11,6 @@ h2 {
     font-family: $fontH2;
     font-weight: 700;
     color: white;
-
-    &::selection {
-        background-color: #ffff;
-        color: #185767;
-    }
 }
 
 p {

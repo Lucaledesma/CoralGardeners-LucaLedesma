@@ -188,10 +188,6 @@
     transform: scale(1);
   }
 }
-.transition, header nav a.title, header nav a.logo {
-  transition: transform 0.3s;
-}
-
 .background-informacion, main section div.bg-informacion, main section h3.h3-informacion {
   background: linear-gradient(90deg, #01000f 0%, #083642 1%, #04202f 40%, #061527 70%, #01000f 100%);
   color: white;
@@ -291,20 +287,18 @@ h2 {
   font-weight: 700;
   color: white;
 }
-h2::-moz-selection {
-  background-color: white;
-  color: #185767;
-}
-h2::selection {
-  background-color: white;
-  color: #185767;
-}
 
 header nav.bg-header {
   background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
 }
+header nav a.logo {
+  transition: transform 0.3s;
+}
 header nav a.logo:hover {
   transform: scale(1.1);
+}
+header nav a.title {
+  transition: transform 0.3s;
 }
 header nav a.title:hover {
   transform: scale(1.05);
@@ -409,13 +403,13 @@ main section div.informacion-card:hover {
 }
 
 main section .servicio {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2509803922) 0px 54px 55px, rgba(0, 0, 0, 0.1215686275) 0px -12px 30px, rgba(0, 0, 0, 0.1215686275) 0px 4px 6px, rgba(0, 0, 0, 0.168627451) 0px 12px 13px, rgba(0, 0, 0, 0.0901960784) 0px -3px 5px;
 }
 main section .border-radius {
   border-radius: 20px;
 }
 main section.bg-servicio {
-  background: linear-gradient(90deg, rgb(30, 108, 129) 0%, rgb(9, 60, 74) 100%);
+  background: linear-gradient(90deg, #1e6c81 0%, rgb(9, 60, 74) 100%);
 }
 main section.servicio__img img {
   box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
