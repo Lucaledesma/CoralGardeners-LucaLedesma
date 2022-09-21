@@ -55,7 +55,7 @@ main {
 
                 &.h2-sucursal {
                     z-index: 1;
-                    animation: $animacion-sucursal;
+                    animation: $animacion-pulsate;
                 }
 
                 &::selection {

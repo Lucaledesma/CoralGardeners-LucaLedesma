@@ -9,6 +9,23 @@ main {
             }
         }
 
+        &.breadcrumb {
+
+            a{
+                background: $bg-breadcrumb;
+                border: 1px solid $color-coralgarden;
+
+                @for $i from 1 through 5 {
+                    
+                    &:nth-child(#{$i}){
+                        animation: $animacion-li;
+                        animation-delay: $i*.25s;
+                    }
+    
+                }
+            }
+        }
+
         h3 {
 
             &.h3-informacion {
@@ -28,7 +45,7 @@ main {
             &.informacion-card {
 
                 &:hover {
-                    transform: scale(1.15);
+                    transform: scale(1.10);
                     box-shadow: $shadow;
                 }
             }
