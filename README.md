@@ -4,6 +4,6 @@
 
 000WebHost: https://coralgarden.000webhostapp.com/
 
-GitHubPages: https://lucaledesma.github.io/ProyectoFinal-LucaLedesma/
+GitHubPages: https://lucaledesma.github.io/DW-ProyectoFinal/
 
 Presupuesto: https://drive.google.com/drive/folders/1iJ-q_DSSYFSnnBaKhkgWADVKW5PMXnYu?usp=sharing
